@@ -90,15 +90,19 @@
 
 
 
-<meta name="description" content="学海无涯,艺海亦无涯.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="学海">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="&amp;emsp;最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| .&amp;emsp;这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事">
+<meta property="og:type" content="article">
+<meta property="og:title" content="springboot就是一个坑">
+<meta property="og:url" content="http://yoursite.com/2017/05/19/springboot就是一个坑/index.html">
 <meta property="og:site_name" content="学海">
-<meta property="og:description" content="学海无涯,艺海亦无涯.">
+<meta property="og:description" content="&amp;emsp;最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| .&amp;emsp;这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139201753&di=fe6ecb1098d15a412794244f1247ebfe&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5bafa40f4bfbfbeda0e0e1177ef0f736afc31f18.jpg">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139295026&di=bb77e172756253e6dc5ec674f4656c84&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fppnews%2Fweb%2F20160914%2F2e56%2F8bc7a%2F201609141430011485764001.gif">
+<meta property="og:updated_time" content="2017-05-18T17:44:33.414Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学海">
-<meta name="twitter:description" content="学海无涯,艺海亦无涯.">
+<meta name="twitter:title" content="springboot就是一个坑">
+<meta name="twitter:description" content="&amp;emsp;最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| .&amp;emsp;这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139201753&di=fe6ecb1098d15a412794244f1247ebfe&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5bafa40f4bfbfbeda0e0e1177ef0f736afc31f18.jpg">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/19/springboot就是一个坑/"/>
 
 
 
 
 
-  <title>学海</title>
+  <title>springboot就是一个坑 | 学海</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,9 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -243,9 +245,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/19/springboot就是一个坑/" itemprop="url">springboot就是一个坑</a></h1>
+          <h1 class="post-title" itemprop="name headline">springboot就是一个坑</h1>
         
 
         <div class="post-meta">
@@ -320,26 +320,31 @@
       
 
       
-        
-          
-            <p>&emsp;</p><h3>最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| .<br>&emsp;这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事.<br>&emsp; 第一天:springboot+maven+mybatis,好大一个坑,怎么扫描不到sql映射文件 *Mapper.xml<br>    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139201753&di=fe6ecb1098d15a412794244f1247ebfe&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5bafa40f4bfbfbeda0e0e1177ef0f736afc31f18.jpg"><p></p>
+        <p>&emsp;</p><h3>最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| .<br>&emsp;这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事.<br>&emsp; 第一天:springboot+maven+mybatis,好大一个坑,怎么扫描不到sql映射文件 *Mapper.xml<br>    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139201753&di=fe6ecb1098d15a412794244f1247ebfe&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F5bafa40f4bfbfbeda0e0e1177ef0f736afc31f18.jpg"><p></p>
 <p>&emsp; </p><h3>抓狂</h3><br>   <h3>—-各种尝试—–<h3><br>    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495139295026&di=bb77e172756253e6dc5ec674f4656c84&imgtype=0&src=http%3A%2F%2Fimg.25pp.com%2Fppnews%2Fweb%2F20160914%2F2e56%2F8bc7a%2F201609141430011485764001.gif"><p></p>
 <p>&emsp; </p><h3>算逑,明天去公司抱大腿<h3>.    <p></p>
 </h3></h3></h3></h3></h3>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -347,135 +352,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/14/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zengkai">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/zengkai.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="学海">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/14/test-my-site/" itemprop="url">第一篇博客</a></h1>
-        
+      
 
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-14T16:40:24+08:00">
-                2017-05-14
-              </time>
+              <a href="/2017/05/14/test-my-site/" rel="next" title="第一篇博客">
+                <i class="fa fa-chevron-left"></i> 第一篇博客
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p><img src="/yinghong.jpg" alt="alt text" title="影鸿"></p>
-<p></p><h2 aglin="center">这是我的第一篇博客,折腾了一下午</h2><p></p>
-<p>开发总是很苦逼的,好不容易有时间,研究研究博客.<br><br>贴一张周末随笔”影鸿”,谨献给自己热爱的书法,激励自己.</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -483,6 +391,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -502,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/zengkai.jpg"
@@ -549,6 +470,31 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">最近公司重构以前老项目项目,打算做microservice,使用jdk8+idea+springboot+mybatis,提供接口内部使用,接口也全部使用restful风格–| . 这个步子迈的有点大,更何况对于我这种基础不是很好,经验不是很丰富的人更是..,才刚刚花了几个月时间去熟悉老掉牙的struts2,现在又要从头再来,心情不是很好.不过总归是新技术,掌握也不是什么坏事.  第一天:springboot+maven+mybatis,好大一个坑,怎么扫描不到sql映射文件 *Mapper.xml    
+  抓狂   —-各种尝试—–    
+  算逑,明天去公司抱大腿.    
+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">抓狂</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">—-各种尝试—–    
+  算逑,明天去公司抱大腿.    
+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">    
+  算逑,明天去公司抱大腿.    
+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">算逑,明天去公司抱大腿.    
+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">.    
+</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -669,6 +615,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
 
   
 
